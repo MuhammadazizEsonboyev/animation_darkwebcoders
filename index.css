@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(103, 76, 76);
+    overflow-x: hidden;
+}
+
+.surface {
+    height: 140px;
+    width: 500%;
+    background: url(./img/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: imageXWay 6s linear infinite;
+    -webkit-animation: imageXWay 6s linear infinite;
+}
+
+img {
+    position: relative;
+    top: 423px;
+    left: 40px;
+    animation: car .8s linear infinite;
+    -webkit-animation: car .8s linear infinite;
+}
+
+.active {
+    display: none;
+}
+
+@keyframes imageXWay {
+    100% {
+        transform: translateX(-2500px);
+        -webkit-transform: translateX(-2500px);
+        -moz-transform: translateX(-2500px);
+        -ms-transform: translateX(-2500px);
+        -o-transform: translateX(-2500px);
+}
+}
+
+@keyframes car {
+    50% {
+        transform: translateY(2px);
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+
+    100% {
+        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+        -moz-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        -o-transform: translateY(-2px);
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+}
